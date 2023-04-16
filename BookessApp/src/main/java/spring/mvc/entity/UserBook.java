@@ -27,11 +27,11 @@ public class UserBook {
 	private int id;
 	
 	@OneToOne
-	@JoinColumn(name="user_id", referencedColumnName = "Id")
+	@JoinColumn(name="user_id", referencedColumnName = "userId")
 	private User userId;
 	
 	@OneToOne
-	@JoinColumn(name="book_id", referencedColumnName = "book_Id")
+	@JoinColumn(name="book_id", referencedColumnName = "bookId")
 	private Book bookId;
 	
 	@Column(name="read_later")
